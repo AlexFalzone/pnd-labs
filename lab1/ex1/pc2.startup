@@ -1,3 +1,4 @@
 ip addr flush eth0
 
-
+/etc/init.d/networking stop
+/etc/init.d/networking start

@@ -1,3 +1,7 @@
 ip addr flush eth0
 umount /etc/resolv.conf
 
+/etc/init.d/networking stop
+/etc/init.d/networking start
+
+echo "nameserver 8.8.8.8" > /etc/resolv.conf

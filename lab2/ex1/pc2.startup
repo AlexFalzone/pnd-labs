@@ -1,1 +1,7 @@
+/etc/init.d/networking stop
+/etc/init.d/networking start
 
+ip -6 addr add 2001:DB8:CAFE:1::102/64 dev eth0
+ip -6 route add default via 2001:DB8:CAFE:1::1 dev eth0
+
+echo "dns-nameservers 1.1.1.1" >> /etc/networking/interfaces

@@ -1,1 +1,4 @@
+/etc/init.d/networking stop
+/etc/init.d/networking start
 
+echo "dns-nameservers 1.1.1.1" >> /etc/networking/interfaces
